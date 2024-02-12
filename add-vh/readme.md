@@ -1,6 +1,6 @@
 # About
 
-This basic scripts helps automating the creaton of domains or subdomains.
+This basic scripts helps automating the creation of domains or subdomains.
 
 ## Usage: Create a vhost
 
