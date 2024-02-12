@@ -2,6 +2,17 @@
 
 This basic scripts helps automating the creaton of domains or subdomains.
 
+## Usage: Create a vhost
+
+    chmod +x setvhost.sh
+
+Set the domain or subdomain
+
+    setvhost.sh —d subdomain3.example.com —u /var/www/mydir/public
+or
+
+    setvhost.sh --domain subdomain3.example.com --directory /var/www/mydir/public
+
 ## SSL for subdomains case
 
  I usally use it with subdomains to which I add a wildcard certificate, which you can generate using acme.sh or certbot:
@@ -24,16 +35,5 @@ In this cas you will have to add to the end of the script an SSL request. For ex
 Cetbot instructions:
 https://certbot.eff.org/
 
-
-## Usage: Create a vhost
-
-    chmod +x setvhost.sh
-
-Set the domain or subdomain
-
-    setvhost.sh —d subdomain3.example.com —u /var/www/mydir/public
-or
-
-    setvhost.sh --domain subdomain3.example.com --directory /var/www/mydir/public
 
 
